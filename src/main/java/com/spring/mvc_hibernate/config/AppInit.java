@@ -8,17 +8,17 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{WebConfig.class}; // Корневая конфигурация
+        return new Class[]{WebConfig.class};
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return null; // Нет дополнительных конфигураций для сервлетов
+        return null;
     }
 
     @Override
     protected String[] getServletMappings() {
-        return new String[]{"/"}; // Маппинг для DispatcherServlet
+        return new String[]{"/"};
     }
 
     protected Filter[] getServletFilters() {
